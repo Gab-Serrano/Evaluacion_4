@@ -26,7 +26,6 @@ while True:
             except ValueError:
                 print("Debe ingresar solo números.")
         fech_nac=input("Ingrese la fecha de nacimiento (dd/mm/aa):\n")
-        ueur=input("¿Pertenece a la Unión Europea? \n1. Sí.\n2. No.\n")
         conyu=input("¿Cuál es su estado civil?\n1. Soltero.\n2. Casado.\n3. Divorciado.\n4. Viudo.\n")
         fn.grabar(nif_num,nombre,edad,fech_nac,ueur,conyu)
     elif menu == 2: #Buscar
@@ -36,7 +35,7 @@ while True:
                 break
             else:
                 print("Debe ingresar un NIF correcto XXXXXXXX-ABC.")
-        fn.buscar()
+        fn.buscar(buscar_nif)
     elif menu == 3: #Imprimir
         pass
         fn.imprimir()
