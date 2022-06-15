@@ -54,7 +54,9 @@ while True:
                 print("Debe ingresar un NIF correcto XXXXXXXX-ABC.")
         fn.imprimir(option,impr_nif)
     elif menu == 4: #Salir
-        break
+        print("Muchas gracias. Saliendo del programa.")
+        print("Programa desarrollado por Gabriel Serrano M.")
+        print("Ver. 1.1.0.")
     else:
         print("Ingreso incorrecto.")
 
